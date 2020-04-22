@@ -16,12 +16,12 @@
 		<form action = "contacts.html" method = "post">
 			<fieldset>
 				<legend>Напишите нам
-				</legend>
-				<input type="text" name = "username" size="30" placeholder="Введите ваше имя"><br>
+				</legend>				
+				<input type="text" name = "username" size="30" placeholder="Введите ваше имя" required><br>
 				<input type="text" name = "useremail" size="30" placeholder="Введите ваш электронный адрес"><br>
 				<input type="text" name = "theme" size="30" placeholder="Тема сообщения"><br>
 				<label>Суть вашего письма:</label><br>
-				<textarea cols = "32" rows = "5"></textarea><br>
+				<textarea cols = "32" rows = "5" name="comment" required></textarea><br>
 				<input type="submit" value="Отправить">
 			</fieldset>
 		</form>
