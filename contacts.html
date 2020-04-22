@@ -2,27 +2,28 @@
 <html lang = "ru">
 	<head>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<title>Контакты</title>
 	</head>
 	<body>
-		<h4>Магазин "Ваш стиль"</h4>
-		<ul>
-			<li><a href = "index.html">Главная </a></li>
-			<li><a href = "catalog.html">Каталог</a></li>
-			<li><a href = "contacts.html">Контакты</a></li>
-		</ul>
+		<div class="top">	
+			<a href = "index.html" class = "menu">Главная </a>
+			<a href = "catalog.html" class = "menu">Каталог</a>
+			<a href = "contacts.html" class = "menu">Контакты</a>
+			<h2 class = "title">Магазин "Sunglasses"</h2>
+		</div>
 		<hr>	
 		<h2>Контакты</h2>
 		<form action = "contacts.html" method = "post">
 			<fieldset>
 				<legend>Напишите нам
 				</legend>				
-				<input type="text" name = "username" size="30" placeholder="Введите ваше имя" required><br>
-				<input type="text" name = "useremail" size="30" placeholder="Введите ваш электронный адрес"><br>
-				<input type="text" name = "theme" size="30" placeholder="Тема сообщения"><br>
+				<input type="text" class="enter" name="username" placeholder="Введите ваше имя" required><br>
+				<input type="text" class="enter" name="useremail" placeholder="Введите ваш электронный адрес"><br>
+				<input type="text" class="enter" name="theme" placeholder="Тема сообщения"><br>
 				<label>Суть вашего письма:</label><br>
-				<textarea cols = "32" rows = "5" name="comment" required></textarea><br>
-				<input type="submit" value="Отправить">
+				<textarea name="comment" required></textarea><br>
+				<input type="submit" value="Отправить" id="button">
 			</fieldset>
 		</form>
 		<h3>Адрес:</h3>
