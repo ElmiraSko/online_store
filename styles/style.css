@@ -21,9 +21,15 @@ a.menu {
 		border-color: #f8f8f8;
 		border-style: solid;
 		background-color: #f8f8f8;
-		position: relative;/*относительно div,работает top, left и т.д. */
+		position: relative;
 		top: 10px;
 		margin-left: 10px;
+}
+a.goods{
+		font-size: 15px;
+		color: #484343;
+		position: relative;
+		top:-20px;
 }
 p.short {
 		color: #707070;
@@ -45,12 +51,11 @@ ul {
 		color: #04376C;
 		list-style-image:url(../images/1.png);		
 }
-input.enter {
-		width: 300px;
-		height: 20px;
+input.enter, textarea {
+		width: 300px;		
 		font-size: 16px;
 		padding: 6px 0 4px 10px;
-		border: 1px solid #009999;    /*#cecece;  background: #F6F6f6;*/
+		border: 1px solid #009999;    /*#cecece;  background: #F6F6f6;  solid*/
 		border-radius: 4px;
 }
 #button {
@@ -58,10 +63,11 @@ input.enter {
 		border-radius: 4px;
 		font-size: 14px;
 }
-textarea {
-		width: 300px;
-		height: 100px;
-		border-radius: 4px;
+input.enter {
+		height: 20px;
+}
+textarea {		
+		height: 100px;		
 }
 img {
 		border: 1px solid #04376C;
@@ -69,7 +75,7 @@ img {
 div.top{
 		background: #009999;  /*#689CD2; #028E9B;*/
 		height: 42px;
-		position: relative; /*позиционирование от края окна браузера, так как у родителя нет position*/
+		position: relative;
         top: 10px; 
 	
 }
