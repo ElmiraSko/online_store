@@ -1,0 +1,81 @@
+body {
+       background: #f8f8f8;
+	   color: #04376C;
+}
+h2.title {
+       text-align: center;
+	   color: #04376C;
+	   margin-top: -15px;
+}
+h3 {
+		color: black;
+		font-size: 18px;
+		font-weight: 400;
+		background-color: #eaeaea;
+}
+a.menu {
+		text-decoration: none;
+		font-family: "Times New Roman", Serif;
+		font-size: 20px;
+		color: #04376C;
+		border-color: #f8f8f8;
+		border-style: solid;
+		background-color: #f8f8f8;
+		position: relative;
+		top: 10px;
+		margin-left: 10px;
+}
+a.goods{
+		font-size: 15px;
+		color: #484343;
+		position: relative;
+		top:-20px;
+}
+p.short {
+		color: #707070;
+		font-size: 14px;
+		font-style: italic;
+		line-height: 16px;
+}
+p.long {
+		color: #484343;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		text-align: left;
+}
+ul {
+		font-family: Garamond, Serif;
+		font-size: 18px;
+		font-weight: 800;
+		color: #04376C;
+		list-style-image:url(../images/1.png);		
+}
+input.enter, textarea {
+		width: 300px;		
+		font-size: 16px;
+		padding: 6px 0 4px 10px;
+		border: 1px solid #009999;    /*#cecece;  background: #F6F6f6;  solid*/
+		border-radius: 4px;
+}
+#button {
+		background: #009999;
+		border-radius: 4px;
+		font-size: 14px;
+}
+input.enter {
+		height: 20px;
+}
+textarea {		
+		height: 100px;		
+}
+img {
+		border: 1px solid #04376C;
+   }
+div.top{
+		background: #009999;  /*#689CD2; #028E9B;*/
+		height: 42px;
+		position: relative;
+        top: 10px; 
+	
+}
