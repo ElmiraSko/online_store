@@ -1,0 +1,126 @@
+body {
+   background: #f8f8f8;
+   color: #04376C;
+}
+h4.title {
+	color: #04376C;
+	position: relative;
+	margin-left: 110px;
+	margin-top: -20px;
+}
+h3 {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #eaeaea;
+}
+.menu {
+	list-style: none;
+	}
+.menu li a {
+	text-decoration: none;
+	font-family: "Times New Roman", serif;
+	font-size: 20px;
+	font-style: italic;
+	color: #04376C;
+	border-color: #f8f8f8;
+	border-style: solid;
+	background-color: #f8f8f8;	
+}
+.menu li a:hover{
+	color: red;
+}
+.header img {
+	width: 120px;
+}
+a.goods{
+	font-size: 15px;
+	color: #484343;
+	position: relative;
+	top:-20px;
+}
+p.short {
+	color: #707070;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;	
+}
+p.short:first-letter {
+	font-family: Georgia;
+	font-size: 18px;
+	color: #484343;
+	font-weight: 600;	
+}
+p.long {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+p.long:first-letter {
+    font-family: Georgia;
+    font-size: 22px;
+    color: blue;
+	font-weight: 800;	
+   }
+.charact {
+	font-family: Garamond, serif;
+	font-size: 18px;
+	font-weight: 800;
+	color: #04376C;
+	border: 2px solid #484343;	
+	border-collapse: collapse;
+} 
+.charact td, tr {
+	border: 2px solid #484343;
+}
+input.enter, textarea {
+	width: 300px;		
+	font-size: 16px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid #484343;
+	border-radius: 4px;
+	text-transform: capitalize;
+}
+#button {
+	background: #799999;
+	border-radius: 4px;
+	font-size: 14px;
+}
+input.enter {
+	height: 20px;
+}
+input.enter[type="email"]:focus{
+	color: blue;
+	background: #eaeaea;
+}
+textarea {		
+	height: 100px;		
+}
+img.goods_img {
+	width: 300px;
+	border: 2px solid #799999;
+   }
+img.goods_img:hover {
+width: 300px;
+border: 2px solid #f8f8f8;
+}
+div.footer {
+	background: #799999;  /*#689CD2; #028E9B;*/
+	height: 100px;
+	text-align: center;
+	color: black;
+	
+}
+.table {
+	width: 300px;
+	text-align: center;
+}
+table.table, td, tr {
+	border: 2px solid #484343;	
+	border-collapse: collapse;
+}
+.table tr:first-child {
+	font-size: 24px;
+	color: #990000;
+}
