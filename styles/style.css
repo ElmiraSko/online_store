@@ -43,19 +43,25 @@ p.short {
 	color: #707070;
 	font-size: 14px;
 	font-style: italic;
-	line-height: 16px;
+	line-height: 16px;	
 }
+p.short:first-letter {
+	font-family: Georgia;
+	font-size: 18px;
 	color: #484343;
+	font-weight: 600;	
+}
 p.long {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
 	text-align: left;
 }
-p:first-letter {
+p.long:first-letter {
     font-family: Georgia;
-    font-size: 20px;
-    color: #04376C;
+    font-size: 22px;
+    color: blue;
+	font-weight: 800;	
    }
 .charact {
 	font-family: Garamond, serif;
@@ -72,7 +78,7 @@ input.enter, textarea {
 	width: 300px;		
 	font-size: 16px;
 	padding: 6px 0 4px 10px;
-	border: 1px solid #484343;    /*#cecece;  background: #F6F6f6;  solid*/
+	border: 1px solid #484343;
 	border-radius: 4px;
 	text-transform: capitalize;
 }
@@ -106,9 +112,15 @@ div.footer {
 	color: black;
 	
 }
-.table, td, tr {
-	border: 2px solid #484343;	
-	border-collapse: collapse;
+.table {
 	width: 300px;
 	text-align: center;
+}
+table.table, td, tr {
+	border: 2px solid #484343;	
+	border-collapse: collapse;
+}
+.table tr:first-child {
+	font-size: 24px;
+	color: #990000;
 }
