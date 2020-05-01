@@ -19,7 +19,6 @@ h3 {
 	}
 .menu li a {
 	text-decoration: none;
-	font-family: "Times New Roman", serif;
 	font-size: 20px;
 	font-style: italic;
 	color: #04376C;
@@ -58,7 +57,7 @@ p.long {
 	text-align: left;
 }
 p.long:first-letter {
-    font-family: Georgia;
+    font-family: Georgia, serif;;
     font-size: 22px;
     color: blue;
 	font-weight: 800;	
@@ -102,8 +101,8 @@ img.goods_img {
 	border: 2px solid #799999;
    }
 img.goods_img:hover {
-width: 300px;
-border: 2px solid #f8f8f8;
+	width: 300px;
+	border: 2px solid #f8f8f8;
 }
 div.footer {
 	background: #799999;  /*#689CD2; #028E9B;*/
