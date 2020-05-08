@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,700;1,800;1,900&family=Roboto:wght@700&display=swap');
+body {
+    margin: 0;
+}
+.header {
+	width: 100%;	
+	height: 700px;	
+	/*background: #abeafa; */
+	background: url(../images/indexBack.jpg) no-repeat 100%;
+	background-size: cover;
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+.header .container {
+	height: inherit;
+	position: relative;		
+}
+.logo {
+	position: absolute;
+	top: 24px;
+	left: 69px;
+}
+.welcome_Yellow {
+	width: 270px;
+	height: 300px;
+	background: #fff51f;
+	position: absolute;
+	top: 336px;
+	padding: 79px 30px 82px 22px;
+	box-sizing: border-box;
+}
+.welcomeTitle {
+	color: #333;
+	font-family: Raleway, sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	padding-left:3px;
+}
+.welcomeText {
+	color: #333;
+	font-family: Raleway, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 14px;
+	margin-top: 22px;
+	font-style: italic;
+	word-spacing: 1.7px;
+}
+.icons {
+	position: absolute;
+	left: 984px;
+	top: 48px;
+	width: 120px;
+	display: flex;
+	justify-content: space-between;
+}
+.icons i {
+	color: #f8f8f8;
+}
+.right_Text_Wrap {
+	position: absolute;
+	left: 748px;
+    top: 245px;
+	width: 313px;
+	height: 169px;
+	color: #fff51f;
+	font-family: Raleway, sans-serif;
+}
+.titleText {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 34px;
+	text-transform: uppercase;
+}
+.simpleText {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	padding-top: 7px;
+	box-sizing: border-box;
+}
+.button_Wrap {	
+	width: 124px;
+	height: 49px;
+	background: #fff51f;
+	position: absolute;
+	left: 751px;
+    top: 475px;
+	padding: 20px 30px 19px 28px;
+	box-sizing: border-box;
+}
+.buttonText {
+	font-family: Raleway, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.main_Area, .bottom_content {
+	background: #afd7e0;
+}
+.main_Area .container {
+	background: #afd7e0; /* background: #f8f8f8; */
+	display: flex;
+	justify-content: space-between;
+	position: relative;	
+}
+.leftMenu_Area { /* Область левого меню и банера, находится в .main_Area .container */
+	width: 270px;
+	height: 475px;
+	background: #26d2fc;
+	margin-top:-20px;
+}	
+.main_Content { /* Центральная область для товара, находится в  .main_Area .container */
+	width: 870px;
+	background: #afd7e0;
+	margin-top:-18px;
+}
+.leftMenu_TitleWrap {
+	width: 270px;
+	height: 65px;
+	background: #333;
+	padding: 22px 188px 34px 40px;
+	box-sizing: border-box;
+}
+.leftMenuTitle_Text {
+	color: #fff;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 32px;
+	text-transform: uppercase;
+}
+.menu_Element_Box {   /* Область левого меню */
+	height: 410px;
+	padding-top: 9px;
+	padding-bottom: 21px;
+	box-sizing: border-box;
+}
+.menu_Element {         /* Стили для элементов списка из левого меню */
+	display: block;
+	text-decoration: none;
+	padding-left: 40px;
+	padding-right: 131px;
+	color: #333;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+	text-transform: uppercase;
+}
+.menu_Element:hover {    /* При наведении на элемент списка */
+    background: #333;
+	color: #ffffff;
+}
+.bottom_Banner {        /* Обертка для блока .banner_img с фоновой картинкой */
+	width: 270px;
+	height: 300px;
+	background: #e0e0e0;
+	margin-top: 30px;
+	padding: 10px 10px;
+	box-sizing: border-box;
+}
+.banner_img {            /* Обертка для блока .banner_Text с надписью */
+	background: url(../images/store.jpg) no-repeat;
+	background-size: 250px 280px;
+	padding: 119px 9px 63px 132px;
+	box-sizing: border-box;
+}
+.banner_Text {             /* Стили для текста Now is open! */
+	color: #333;
+	font-family: Raleway, sans-serif;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 36px;
+	text-transform: uppercase;
+	font-style: italic;
+}
+.new_products_area, .top_products_wrap, .sale_products_wrap {   /* Области товаров */
+	width: 870px;
+	background: #afd7e0;
+	margin-bottom: 30px;
+}
+.new_products_area {   /* Область new_products */
+	height: 770px; /* Заголовок:(h: 70px + margin-bottom: 30px;) + Товар:(h: 320px)*2= 640px  + Расстояние между строками 30px;*/
+}
+.top_products_wrap, .sale_products_wrap {
+	height: 420px;    /* Заголовок:(h: 70px + margin-bottom: 30px;) + Товар:(h: 320px)   */
+}
+.products_wrap {  /* Сетка для товаров, находится по заголовком */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px 30px;
+}
+.product {
+	width: 270px;
+	height: 320px;
+	background-color: #ffffff;
+	padding: 10px 10px 80px 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.products_title_wrap {     /* Стили для заголовков блоков: New, Top, Sale products   */
+	color: #707070;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-style: italic;
+	padding: 22px 5px 22px 25px;
+	margin-bottom: 30px;
+	letter-spacing: -0.5px;
+	background: #eaeaea;
+}
+.product_info, .brands, .insta_images, .icons_box, .footer .container, .paymentWrap, .footerBottom .container, .footerIcons {
+	display: flex;
+	justify-content: space-between;	
+}
+.product_name, .product_price {
+	color: #333;
+	font-family: Roboto, sans-serif;
+	font-style: italic;
+	letter-spacing: -0.4px;
+	margin-top: 15px;
+}
+.product_name {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.product_price {
+	font-size: 18px;
+	font-weight: 800;
+}
+.product_price_old {
+	color: #e24602;
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: italic;
+	text-decoration: line-through;	
+}
+.brands {
+	height: 160px;
+	background-color: #ffffff;
+	padding: 58px 0px 58px 20px;
+	box-sizing: border-box;
+}
+.insta_banner {
+	height: 350px;
+	background-color: #eaeaea;
+}
+.insta_title {
+	color: #333;
+	font-family: Roboto, sans-serif;
+	font-size: 22px;
+	font-weight: 700;
+	font-style: italic;
+	text-align: center;
+	padding: 50px 0px 40px 20px;
+	box-sizing: border-box;
+}
+.insta_title span {
+	font-size: 18px;
+}
+.small_img {
+	border-width: 8px;
+	border-style: solid; 
+	border-color: #f8f8f8;
+}
+.insta_title, .box_1, .box_2, .box_3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box_1, .box_2, .box_3 {
+	width: 390px;
+	height: 150px;
+}
+.box_1 {
+	background: #3b5997;
+}
+.box_2 {
+	background: #3fccfd;
+}
+.box_3 {
+	background: #cb2027;
+}
+.footer {
+	width: 100%;
+	height: 301px;
+	background: #373737;
+}
+.footer .container {
+	height: inherit;
+	background: inherit;
+}
+.footer_top_left, .footer_top_right {
+	background: #373737;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+}
+.footer_top_left {
+	padding-right: 87px;
+	box-sizing: border-box;
+}
+.right_columns_wrap {
+	width: 45%;
+}
+.left_columns_title, .right_columns_title {
+	color: #ffffff;
+	font-family: Raleway, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	padding-top: 30px;
+}
+.left_columns_title {
+	padding-bottom: 20px;
+}
+.right_columns_title {
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+.left_columns_menu a {
+	display: block;
+	color: #ffffff;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	text-decoration: none;
+}
+.right_columns_text {
+	color: #f8f8f8;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	line-height: 12px;
+	margin-bottom: 30px;
+}
+.email_wrap {
+	width: 180px;	
+	background: #faef03;
+	color: #333;
+	font-size: 12px;
+	font-weight: 700;	
+}
+.submit_wrap {
+	width: 71px;
+	background: #000000;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 400;
+}
+.email_wrap, .submit_wrap {
+	font-family: Roboto, sans-serif;
+	line-height: 21px;
+	text-transform: uppercase;
+	border-width: 0;
+	height: 30px;
+}
+.paymentWrap {
+	width: 267px;
+	margin-top: 30px;
+}
+.footerBottom {
+	height: 50px;
+	background: #333;
+}
+.hponeWrap, #e-mail {
+	font-family: Roboto, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+}
+.hponeWrap {
+	color: #ffffff;
+}
+#e-mail {
+	color: #faef03;
+}
+.inf {
+	color: #dad9d9;
+	font-family: Roboto, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 21.6px;
+	margin-top: 16px;
+}
+.footerIcons i {
+	color: white;
+    font-size: 15px;
+}
+.footerIcons {
+	width: 178px;
+	margin-top: 15px;
+}
+
+
+
+	
+
