@@ -1,0 +1,539 @@
+@import "_variables.scss";
+
+@mixin family_weight_color($_fontFamily, $_fontWeight, $_fontColor) {
+	font-family: $_fontFamily;
+	font-weight: $_fontWeight;
+	color: $_fontColor;
+}
+@mixin family_style_color($_fontFamily, $_fontStyle, $_fontColor) {
+	font-family: $_fontFamily;
+	font-style: $_fontStyle;
+	color: $_fontColor;
+}
+@mixin family_size_weight_color($_fontFamily, $_fontSize, $_fontWeight, $_fontColor) {
+	font-family: $_fontFamily;
+	font-size: $_fontSize;
+	font-weight: $_fontWeight;
+	color: $_fontColor;
+}
+@mixin family_size_weight($_fontFamily, $_fontSize, $_fontWeight) {
+	font-family: $_fontFamily;
+	font-size: $_fontSize;
+	font-weight: $_fontWeight;
+}
+
+
+.header {
+	width: 100%;	
+	min-height: 700px;
+	background: url(#{$pathHeaderBgImage}/indexBack.jpg) no-repeat #abeafa 100%;
+	background-size: cover;
+	
+	.container {
+	min-height: inherit;
+	position: relative;	
+    }
+}
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	
+	@media (max-width: 992px) {
+		max-width: 768px;
+	}
+}
+%flexAndJustifyBetween {
+	display: flex;
+	justify-content: space-between;
+}
+.logo {
+	position: absolute;
+	top: 3.4%;
+	left: 10%;
+	
+	@media (max-width: 768px) {	
+		top: 1%;
+		left: 2%;
+		width: 15%;
+		height: 10%
+	}
+}
+.welcome_Yellow {
+	width: 270px;
+	height: 300px;
+	background: $bgColorYellow;
+	position: absolute;
+	top: 48%;
+	padding: 79px 30px 82px 22px;
+	box-sizing: border-box;
+	
+	@media (max-width: 768px) {	
+		width: 200px;
+		height: 230px;
+		top: 60%;
+		padding: 25px 18px 25px 14px;
+	}
+}
+
+%forWelcome {
+	@include family_weight_color($fontRaleway, 700, $menuFontColor);
+}
+.welcomeTitle {	
+	@extend %forWelcome;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	padding-left:3px;
+	
+	@media (max-width: 768px) {	
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 25px;
+		margin-top: 5px;
+	}
+}
+.welcomeText {
+	@extend %forWelcome;
+	font-size: 18px;
+	line-height: 14px;
+	margin-top: 22px;
+	font-style: italic;
+	word-spacing: 1.7px;
+}
+.icons {
+	position: absolute;
+	right: 5%;
+	top: 7%;
+	width: 120px;
+	@extend %flexAndJustifyBetween;
+}
+.icons i {
+	color: $iconsColor;
+}
+.right_Text_Wrap {
+	width: 313px;
+	height: 169px;
+	position: absolute;
+	left: 65%;
+    top: 35%;
+	font-family: $fontRaleway;
+	color: $bgColorYellow;	
+	
+	@media (max-width: 768px) {
+		width: 250px;
+	}
+}
+.titleText {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 34px;
+	text-transform: uppercase;
+	
+	@media (max-width: 768px) {	
+		font-size: 28px;
+		line-height: 30px;
+	}
+}
+.simpleText {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	padding-top: 7px;
+	box-sizing: border-box;
+	
+	@media (max-width: 768px) {	
+		font-size: 16px;
+		line-height: 20px;
+		padding-top: 5px;
+		padding-right: 5px;
+	}
+}
+.button_Wrap {	
+	width: 124px;
+	height: 49px;
+	background: $bgColorYellow;
+	position: absolute;
+	left: 64%;
+    top: 68%;
+	padding: 20px 30px 19px 28px;
+	box-sizing: border-box;
+	
+	@media (max-width: 768px) {	
+		left: 80%;
+	}
+}
+.buttonText {
+	@include family_size_weight_color($fontRaleway, 12px, 700, #000000);
+	text-transform: uppercase;
+}
+.main_Area {
+	background: $baseBgColor;
+	width: 100%;
+}
+.top_content {
+	background: $baseBgColor;
+	@extend %flexAndJustifyBetween;
+	position: relative;
+	
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-content: center;
+	}	
+}
+.leftMenu_Area { 					/* Область левого меню и банера, находится в .main_Area .container */
+	width: 23%;
+	height: 475px;
+	background: $menuBgColor;
+	margin-top:-20px;
+	
+	@media (max-width: 768px) {	
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		height: auto;
+		margin-top: 0px;
+	}
+}	
+.main_Content { 					/* Центральная область для товара, находится в  .main_Area .container */
+	background: $baseBgColor;
+	margin-top:-18px;
+	
+	@media (max-width: 768px) {
+		margin-top: 0px;
+	}
+}
+.leftMenu_TitleWrap {
+	width: inherit;
+	height: 65px;
+	background: $menuFontColor;
+	padding: 22px 188px 34px 40px;
+	box-sizing: border-box;
+	
+	@media (max-width: 992px) {
+		padding: 22px 158px 34px 40px;
+	}
+	
+	@media (max-width: 768px) {	
+		width: 100%;
+		height: auto;
+		padding: 15px 0px 15px 40px;
+	}
+}
+.leftMenuTitle_Text {
+	@include family_size_weight_color($fontRoboto, 14px, 700, $menuFontColor2);
+	line-height: 32px;
+	text-transform: uppercase;
+}
+.menu_Element_Box {
+	height: 410px;
+	padding-top: 9px;
+	padding-bottom: 21px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	flex-shrink:0;
+	
+	@media (max-width: 768px) {	
+		height: auto;
+		width: inherit;
+		padding-top: 0px;
+		padding-bottom: 10px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+.menu_Element {       				  /* Стили для элементов списка из левого меню */
+	@include family_size_weight_color($fontRoboto, 14px, 400, $menuFontColor);
+	display: block;
+	text-decoration: none;
+	padding-left: 40px;
+	line-height: 36px;
+	text-transform: uppercase;
+	
+	&:hover {  						  /* При наведении на элемент списка */
+    background: $menuFontColor;
+	color: $menuFontColor2;
+	}
+	
+	@media (max-width: 768px) {	
+		padding-left: 10px;
+		flex-shrink: 0;
+		flex-grow: 1;
+	}
+}
+
+.banner_img {           				 /* Обертка для блока .banner_Text с надписью */
+	background: url(#{$pathHeaderBgImage}/store.jpg) no-repeat 100%;
+	padding: 50% 5% 25% 35%; /* padding для текста Now is open! */
+	box-sizing: border-box;
+	border: 10px solid #e0e0e0;
+	margin-top: 30px;
+}
+.banner_Text {             /* Стили для текста Now is open! */
+	@include family_size_weight_color($fontRaleway, 36px, 900, $menuFontColor);
+	line-height: 36px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+.new_products_wrap, .top_products_wrap, .sale_products_wrap {   /* Области товаров */
+	max-width: 870px;
+	background: $baseBgColor;
+	margin-bottom: 30px;
+	
+	@media (max-width: 992px) {
+		max-width: 100%;
+	}
+}
+.products_wrap {  					/* Сетка для товаров, находится по заголовком */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px 30px;
+	
+	@media (max-width: 992px) {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 15px 15px;
+	}
+}
+.product {
+	width: 100%;
+	height: 320px;
+	background: $menuFontColor2;
+	padding: 10px 10px 80px 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.products_title_wrap {     /* Стили для заголовков блоков: New, Top, Sale products   */
+	@include family_size_weight_color($fontRoboto, 22px, 400, $productsFontColor);
+	text-transform: uppercase;
+	font-style: italic;
+	padding: 22px 5px 22px 25px;
+	margin-bottom: 30px;
+	letter-spacing: -0.5px;
+	background: $productsBgColor;
+}
+.product_info, .brands, .insta_images, .icons_box, .footer .container, .paymentWrap, .footerBottom .container, .footerIcons {
+	@extend %flexAndJustifyBetween;
+}
+%forProduct {
+	@include family_style_color($fontRoboto, italic, $menuFontColor);
+}
+.product_name, .product_price {
+	@extend %forProduct;
+	letter-spacing: -0.4px;
+	margin-top: 15px;
+}
+.product_name {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 18px;
+}
+.product_price {
+	font-size: 18px;
+	font-weight: 800;
+}
+.product_price_old {
+	@include family_size_weight_color($fontRoboto, 14px, 400, $productPriceOldColor);
+	font-style: italic;
+	text-decoration: line-through;	
+}
+.product_img {
+		width: 100%;
+	}
+.brands {
+	height: 160px;
+	background: $menuFontColor2;
+	padding: 58px 0px 58px 20px;
+	box-sizing: border-box;
+	
+	@media (max-width: 992px) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}	
+}
+.insta_images {
+	@media (max-width: 992px) {	
+		justify-content: center;
+	}
+}
+.brands_img, .insta_images {
+	flex-wrap: wrap;
+	flex-shrink: 0;
+	}
+.banner_img {	
+	@media (max-width: 768px) {	
+		width: 30%;
+		padding: 0;
+		margin-top: 0;
+	}
+}
+.insta_banner {
+	background-color: $productsBgColor;
+}
+.insta_title {
+	@include family_size_weight_color($fontRoboto, 22px, 700, $menuFontColor);
+	font-style: italic;
+	text-align: center;
+	padding: 50px 0px 40px 0px;
+	box-sizing: border-box;
+}
+.insta_title span {
+	font-size: 18px;
+}
+.small_img {
+	flex-wrap: wrap;
+	border-width: 8px;
+	border-style: solid; 
+	border-color: $iconsColor;
+}
+.insta_title, .box_1, .box_2, .box_3 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.box_1, .box_2, .box_3 {
+	width: 390px;
+	height: 150px;
+}
+.box_1 {
+	background: $instaBoxColor1;
+}
+.box_2 {
+	background: $instaBoxColor2;
+}
+.box_3 {
+	background: $instaBoxColor3;
+}
+.footer {
+	width: 100%;
+	min-height: 300px;
+	background: $footerBgColor;
+}
+.footer .container {
+	height: inherit;
+	background: inherit;
+	
+	@media (max-width: 768px) {	
+		flex-direction: column;
+	}
+}
+.footer_top_right {
+	@media (max-width: 768px) {	
+		flex-direction: column;
+	}
+}
+.footer_top_left, .footer_top_right {
+	background: $footerBgColor;
+	width: 50%;
+	@extend %flexAndJustifyBetween;
+	
+	@media (max-width: 768px) {	
+		width: 100%;
+		padding: 0px 20px;
+		box-sizing: border-box;
+	}
+}
+.footer_top_left {
+	padding-right: 87px;
+	box-sizing: border-box;
+}
+.right_columns_wrap {
+	width: 45%;
+	
+	@media (max-width: 768px) {
+		width: 100%;
+	}
+}
+.left_columns_title, .right_columns_title {
+	@include family_size_weight_color($fontRaleway, 18px, 400, $menuFontColor2);
+	padding-top: 30px;
+}
+.left_columns_title {
+	padding-bottom: 20px;
+}
+.right_columns_title {
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+.left_columns_menu a {
+	@include family_size_weight_color($fontRoboto, 12px, 700, $menuFontColor2);
+	line-height: 18px;
+	text-decoration: none;
+	display: block;
+}
+.right_columns_text {
+	font-family: $fontRoboto;
+	font-size: 12px;
+	color: $iconsColor;
+	line-height: 12px;
+	margin-bottom: 30px;
+	
+	@media (max-width: 768px) {	
+		font-size: 12px;
+	}
+}
+.email_wrap {
+	width: 180px;	
+	background: #faef03;
+	color: $menuFontColor;
+	font-size: 12px;
+	font-weight: 700;	
+}
+.submit_wrap {
+	width: 71px;
+	background: #000000;
+	color: $menuFontColor2;
+	font-size: 12px;
+	font-weight: 400;
+}
+.email_wrap, .submit_wrap {
+	font-family: $fontRoboto;
+	line-height: 21px;
+	text-transform: uppercase;
+	border-width: 0;
+	height: 30px;
+}
+.paymentWrap {
+	width: 267px;
+	margin-top: 30px;
+}
+.footerBottom {
+	height: 50px;
+	background: $menuFontColor;
+}
+.hponeWrap, span[id="e-mail"] {
+	@include family_size_weight($fontRoboto, 14px, 400);
+	line-height: 36px;
+}
+.hponeWrap {
+	color: $menuFontColor2;
+}
+span[id="e-mail"] {
+	color: #faef03;
+} 
+.inf {
+	@include family_size_weight_color($fontRoboto, 12px, 400, #dad9d9);
+	line-height: 21.6px;
+	margin-top: 16px;
+	
+	@media (max-width: 768px) {
+		width: 100%;
+		padding: 0px 20px;
+		box-sizing: border-box;
+		margin-top: 5px;
+	}
+}
+.footerIcons i {
+	color: white;
+    font-size: 15px;
+}
+.footerIcons {
+	width: 178px;
+	margin-top: 15px;
+	
+	@media (max-width: 768px) {	
+		margin-right: 15px;
+	}
+}
+
+
